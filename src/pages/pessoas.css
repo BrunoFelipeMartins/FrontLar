@@ -1,16 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
     background-color: #f4f4f9;
+    overflow-x: hidden;
   }
   
   div {
-    width: 80%;
+    width: 100%;
     max-width: 1200px;
     padding: 20px;
     display: flex;
@@ -41,8 +50,10 @@ body {
   
   table {
     width: 100%;
+    max-width: 1000px;
     margin-top: 20px;
     border-collapse: collapse;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   table, th, td {
