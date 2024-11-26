@@ -1,6 +1,6 @@
 import "./Home.css";
 import Menu from "./Menu";
-import background from "../assets/background.jpg"; // Imagem importada
+import background from "../assets/background.jpg";
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
         </div>
       </header>
       <div className="content">
-        {/* Conteúdo adicional pode ser colocado aqui */}
+        {}
       </div>
     </div>
   );

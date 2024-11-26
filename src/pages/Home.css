@@ -1,34 +1,34 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%; /* Garante que o body ocupe toda a altura da tela */
-    overflow: hidden; /* Desativa a rolagem */
+    height: 100%;
+    overflow: hidden;
   }
 
 .home {
-    width: 100vw; /* A largura é 100% da largura da tela */
-    height: 100vh; /* A altura é 100% da altura da tela */
+    width: 100vw;
+    height: 100vh;
     background-image: url('../assets/background.jpg');
-    background-size: contain; /* A imagem cobre toda a tela */
-    background-position: center; /* A imagem será centralizada */
-    background-repeat: no-repeat; /* A imagem não será repetida */
-    display: flex; /* Usando flexbox para centrar o conteúdo */
-    flex-direction: column; /* Organização vertical */
-    justify-content: flex-start; /* Centraliza os itens verticalmente */
-    align-items: flex-start; /* Centraliza os itens horizontalmente */
-    text-align: left; /* Centraliza o texto */
-    color: white; /* Torna o texto visível sobre o fundo */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    color: white;
     position: relative;
     padding: 20px;
   }
 
   .titulo {
-    position: absolute; /* Posiciona o título de forma absoluta dentro do contêiner */
-    top: 20px; /* Distância do topo (ajuste conforme necessário) */
-    left: 50%; /* Posiciona no meio da tela horizontalmente */
-    transform: translateX(-50%); /* Ajusta para que o título fique exatamente no centro */
-    font-size: 5rem !important; /* Tamanho da fonte do título */
-    font-weight: bold; /* Opção de deixar o título em negrito */
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem !important;
+    font-weight: bold;
     color: rgb(0, 0, 0);
     margin: 0;
     padding: 20x 0;
@@ -37,46 +37,43 @@ html, body {
   .menu {
     display: flex;
     flex-direction: row;
-    margin-top: 85px; /* Espaço entre o título e os links */
-    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo semitransparente para o menu */
-    padding: 5px; /* Espaço interno no menu */
-    border-radius: 10px; /* Se quiser bordas arredondadas */
+    margin-top: 85px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 5px;
+    border-radius: 10px;
   }
   
   .menu-item {
     font-size: 1.5rem;
     color: rgb(245, 245, 244);
     text-decoration: none;
-    margin-bottom: 10px; /* Espaço entre os links */
+    margin-bottom: 10px;
   }
   
   .menu-item:hover {
     text-decoration: underline;
   }
   
-  /* Estilo do cabeçalho */
   .header {
     display: flex;
-    justify-content: space-between; /* Espaça o título e o menu */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 10px 20px; /* Espaçamento interno */
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo semitransparente */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
   }
   
-  /* Estilo do título */
   .header h1 {
-    margin: 0; /* Remove margens padrão */
-    font-size: 2rem; /* Tamanho do título */
+    margin: 0;
+    font-size: 2rem;
   }
   
-  /* Estilo do menu */
   .header a {
-    color: rgb(0, 0, 0); /* Links brancos */
-    text-decoration: none; /* Remove sublinhado */
-    margin-right: 15px; /* Espaçamento entre links */
-    font-size: 1.2rem; /* Tamanho do texto */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.2rem;
   }
   
   .header a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline;
   }

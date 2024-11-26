@@ -5,9 +5,8 @@ import "./pessoas.css";
 
 function Pessoas() {
   const [pessoas, setPessoas] = useState([]);
-  const [loading, setLoading] = useState(true); // Estado para controle de carregamento
+  const [loading, setLoading] = useState(true);
 
-  // Carregar dados do back-end na inicialização
   useEffect(() => {
     axios.get("http://localhost:5000/api/pessoas")
       .then(response => {
@@ -17,11 +16,10 @@ function Pessoas() {
         console.error("Erro ao carregar pessoas:", error);
       })
       .finally(() => {
-        setLoading(false); // Fim do loading
+        setLoading(false);
       });
   }, []);
 
-  // Função para adicionar pessoa
   const adicionarPessoa = async () => {
     const nome = prompt("Digite o nome:");
     if (nome) {
@@ -34,7 +32,6 @@ function Pessoas() {
     }
   };
 
-  // Função para marcar pessoa como inativa
   const inativarPessoa = async (id) => {
     if (window.confirm("Tem certeza que deseja inativar?")) {
       try {
@@ -48,7 +45,6 @@ function Pessoas() {
     }
   };
 
-  // Função para editar pessoa
   const editarPessoa = async (id) => {
     const nome = prompt("Digite o novo nome:");
     if (nome) {
@@ -68,7 +64,7 @@ function Pessoas() {
       <h1>Pessoas</h1>
       <Menu />
       {loading ? (
-        <p>Carregando...</p> // Mensagem de carregamento
+        <p>Carregando...</p>
       ) : (
         <>
           <button onClick={adicionarPessoa}>Cadastrar Pessoa</button>

@@ -1,4 +1,3 @@
-/* Adicionar um estilo global para o corpo da página */
 body {
     margin: 0;
     padding: 0;
@@ -22,7 +21,7 @@ body {
   h1 {
     text-align: center;
     margin-top: 0;
-    font-size: 2.5rem; /* Ajuste o tamanho do título conforme necessário */
+    font-size: 2.5rem;
     color: #333;
   }
   
@@ -63,7 +62,6 @@ body {
     background-color: #fff;
   }
   
-  /* Ajustar a tabela para que ela ocupe boa parte da tela */
   table {
     width: 100%;
     max-width: 1000px;
